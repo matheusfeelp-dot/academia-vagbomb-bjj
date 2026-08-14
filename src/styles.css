@@ -148,3 +148,14 @@
     linear-gradient(180deg, var(--card), var(--background));
 }
 
+@utility bg-watermark {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--background) 62%, transparent), color-mix(in oklab, var(--background) 62%, transparent)),
+    url("/__l5e/assets-v1/790dabe1-92a3-453e-a694-da8e6b2598ea/vagbomb-logo.jpg");
+  background-repeat: repeat, repeat;
+  background-size: 260px, 260px;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
+}
+
