@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Baby, Shield, Users, Venus } from "lucide-react";
+import { ArrowRight, Baby, HeartHandshake, Shield, Users, Venus } from "lucide-react";
 import heroImg from "@/assets/hero-bjj.jpg";
 import faixasImg from "@/assets/kids-faixas.jpg";
 import womenImg from "@/assets/women-bjj.jpg";
+import inclusaoImg from "@/assets/inclusao-bjj.jpg";
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
