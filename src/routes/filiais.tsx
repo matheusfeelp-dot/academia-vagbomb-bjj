@@ -1,0 +1,101 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight, MapPin } from "lucide-react";
+
+export const Route = createFileRoute("/filiais")({
+  head: () => ({
+    meta: [
+      { title: "Filiais e Sede — Vagbomb BJJ" },
+      {
+        name: "description",
+        content:
+          "Sede em Salesópolis e filiais no Distrito de Remédios e no Bombeiros 6GB em Bertioga. Encontre a unidade Vagbomb BJJ mais próxima de você.",
+      },
+      { property: "og:title", content: "Filiais e Sede — Vagbomb BJJ" },
+      {
+        property: "og:description",
+        content:
+          "Sede em Salesópolis e filiais no Distrito de Remédios e no Bombeiros 6GB em Bertioga.",
+      },
+    ],
+  }),
+  component: Filiais,
+});
+
+const unidades = [
+  {
+    tag: "Sede",
+    nome: "Salesópolis",
+    endereco: "Rua das Palmeiras, 250 — Centro, Salesópolis — SP",
+    desc: "Matriz da Vagbomb BJJ. Estrutura completa com tatame, vestiários e sala de musculação.",
+  },
+  {
+    tag: "Filial",
+    nome: "Distrito de Remédios",
+    endereco: "Distrito de Remédios — Salesópolis, SP",
+    desc: "Atende a comunidade do distrito com turmas infantis e adultas, no mesmo padrão da matriz.",
+  },
+  {
+    tag: "Filial",
+    nome: "Bombeiros 6GB — Bertioga",
+    endereco: "Quartel dos Bombeiros 6GB — Bertioga, SP",
+    desc: "Parceria com o quartel dos bombeiros. Turmas abertas ao público, infantis e adultas.",
+  },
+];
+
+function Filiais() {
+  return (
+    <div className="mx-auto max-w-6xl px-5 py-16">
+      <p className="text-stencil text-sm text-accent">Onde treinar</p>
+      <h1 className="mt-2 text-5xl">Filiais e Sede</h1>
+      <p className="mt-3 max-w-lg text-muted-foreground">
+        A Vagbomb BJJ está em três endereços. Escolha a unidade mais próxima e venha treinar.
+      </p>
+
+      <div className="mt-12 grid gap-6 md:grid-cols-3">
+        {unidades.map((u) => (
+          <div
+            key={u.nome}
+            className="surface-grit flex flex-col border border-border p-6 transition-colors hover:border-primary"
+          >
+            <span
+              className={`text-stencil w-fit px-3 py-1 text-xs ${
+                u.tag === "Sede" ? "bg-primary text-primary-foreground" : "bg-accent text-accent-foreground"
+              }`}
+            >
+              {u.tag}
+            </span>
+            <h2 className="mt-4 text-2xl">{u.nome}</h2>
+            <p className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              {u.endereco}
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">{u.desc}</p>
+            <Link
+              to="/contato"
+              className="text-stencil mt-auto inline-flex items-center gap-2 pt-6 text-primary"
+            >
+              Agendar aula nesta unidade <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        ))}
+      </div>
+
+      <section className="hazard-stripe mt-16">
+        <div className="bg-background/90">
+          <div className="mx-auto max-w-6xl px-5 py-16 text-center">
+            <h2 className="text-4xl">Não sabe qual escolher?</h2>
+            <p className="mx-auto mt-3 max-w-md text-muted-foreground">
+              Fale com a gente e ajudamos você a encontrar a unidade ideal.
+            </p>
+            <Link
+              to="/contato"
+              className="text-stencil mt-8 inline-flex items-center gap-2 bg-primary px-8 py-3 text-primary-foreground"
+            >
+              Falar com a equipe <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
