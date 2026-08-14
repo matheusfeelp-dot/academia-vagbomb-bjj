@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Baby, Shield, Users, Venus } from "lucide-react";
 import heroImg from "@/assets/hero-bjj.jpg";
 import kidsImg from "@/assets/kids-bjj.jpg";
+import faixasImg from "@/assets/kids-faixas.jpg";
 import womenImg from "@/assets/women-bjj.jpg";
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
