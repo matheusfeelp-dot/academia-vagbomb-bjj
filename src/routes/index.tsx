@@ -119,10 +119,10 @@ function Home() {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center">
           <img
-            src={kidsImg}
-            alt="Crianças em aula de jiu-jitsu infantil"
+            src={faixasImg}
+            alt="Crianças de jiu-jitsu com faixas verde, amarela e branca com graus coloridos"
             width={1200}
-            height={900}
+            height={912}
             loading="lazy"
             className="w-full border border-border object-cover"
           />
@@ -135,8 +135,8 @@ function Home() {
             </p>
             <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
               <li>• Turmas separadas por idade e tamanho</li>
+              <li>• Graduação com faixas verde, amarela e branca com graus coloridos</li>
               <li>• Professores certificados e formação continuada</li>
-              <li>• Graduação com avaliação individual</li>
             </ul>
           </div>
         </div>
