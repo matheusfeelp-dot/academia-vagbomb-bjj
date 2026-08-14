@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as FiliaisRouteImport } from './routes/filiais'
 import { Route as HorariosRouteImport } from './routes/horarios'
 import { Route as TurmasRouteImport } from './routes/turmas'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FiliaisRoute = FiliaisRouteImport.update({
+  id: '/filiais',
+  path: '/filiais',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HorariosRoute = HorariosRouteImport.update({
@@ -38,12 +44,14 @@ const TurmasRoute = TurmasRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/filiais': typeof FiliaisRoute
   '/horarios': typeof HorariosRoute
   '/turmas': typeof TurmasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/filiais': typeof FiliaisRoute
   '/horarios': typeof HorariosRoute
   '/turmas': typeof TurmasRoute
 }
@@ -51,20 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/filiais': typeof FiliaisRoute
   '/horarios': typeof HorariosRoute
   '/turmas': typeof TurmasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato' | '/horarios' | '/turmas'
+  fullPaths: '/' | '/contato' | '/filiais' | '/horarios' | '/turmas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contato' | '/horarios' | '/turmas'
-  id: '__root__' | '/' | '/contato' | '/horarios' | '/turmas'
+  to: '/' | '/contato' | '/filiais' | '/horarios' | '/turmas'
+  id: '__root__' | '/' | '/contato' | '/filiais' | '/horarios' | '/turmas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContatoRoute: typeof ContatoRoute
+  FiliaisRoute: typeof FiliaisRoute
   HorariosRoute: typeof HorariosRoute
   TurmasRoute: typeof TurmasRoute
 }
@@ -83,6 +93,13 @@ declare module '@tanstack/react-router' {
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/filiais': {
+      id: '/filiais'
+      path: '/filiais'
+      fullPath: '/filiais'
+      preLoaderRoute: typeof FiliaisRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/horarios': {
@@ -105,6 +122,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
+  FiliaisRoute: FiliaisRoute,
   HorariosRoute: HorariosRoute,
   TurmasRoute: TurmasRoute,
 }
