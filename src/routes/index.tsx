@@ -3,7 +3,7 @@ import { ArrowRight, Baby, HeartHandshake, Shield, Users, Venus } from "lucide-r
 import heroImg from "@/assets/hero-bjj.jpg";
 import faixasImg from "@/assets/kids-faixas.jpg";
 import womenImg from "@/assets/women-bjj.jpg";
-import inclusaoImg from "@/assets/inclusao-bjj.jpg";
+
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -168,37 +168,27 @@ function Home() {
       </section>
 
       <section className="border-y border-border bg-card">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center">
-          <img
-            src={inclusaoImg}
-            alt="Aula de jiu-jitsu de inclusão para alunos autistas e com TDAH"
-            width={1200}
-            height={900}
-            loading="lazy"
-            className="w-full border border-border object-cover"
-          />
-          <div>
-            <p className="text-stencil text-sm text-accent">Inclusão</p>
-            <h2 className="mt-2 text-4xl">Jiu-jitsu para todos os cérebros</h2>
-            <p className="mt-4 text-muted-foreground">
-              Aulas adaptadas para alunos no espectro autista e com TDAH. Ambiente
-              calmo, estímulos controlados e professores preparados para acolher cada
-              aluno no seu ritmo — o tatame como espaço de regulação, foco e
-              autoestima.
-            </p>
-            <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-              <li>• Turma exclusiva de inclusão (autismo e TDAH)</li>
-              <li>• Aulas com redução de estímulos sensoriais</li>
-              <li>• Professores capacitados em neurodivergência</li>
-              <li>• Acompanhamento individualizado do progresso</li>
-            </ul>
-            <Link
-              to="/contato"
-              className="text-stencil mt-6 inline-flex items-center gap-2 text-primary"
-            >
-              Agendar aula de inclusão <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
+        <div className="mx-auto max-w-3xl px-5 py-20 text-center">
+          <p className="text-stencil text-sm text-accent">Inclusão</p>
+          <h2 className="mt-2 text-4xl">Jiu-jitsu para todos os cérebros</h2>
+          <p className="mt-4 text-muted-foreground">
+            Aulas adaptadas para alunos no espectro autista e com TDAH. Ambiente
+            calmo, estímulos controlados e professores preparados para acolher cada
+            aluno no seu ritmo — o tatame como espaço de regulação, foco e
+            autoestima.
+          </p>
+          <ul className="mt-6 space-y-2 text-left text-sm text-muted-foreground">
+            <li>• Turma exclusiva de inclusão (autismo e TDAH)</li>
+            <li>• Aulas com redução de estímulos sensoriais</li>
+            <li>• Professores capacitados em neurodivergência</li>
+            <li>• Acompanhamento individualizado do progresso</li>
+          </ul>
+          <Link
+            to="/contato"
+            className="text-stencil mt-8 inline-flex items-center gap-2 text-primary"
+          >
+            Agendar aula de inclusão <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
 
