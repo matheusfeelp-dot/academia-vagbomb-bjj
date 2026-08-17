@@ -26,7 +26,7 @@ export function SiteFooter() {
 
         <div className="space-y-3 text-sm text-muted-foreground">
           <p className="flex items-center gap-2">
-            <MapPin className="h-4 w-4 text-primary" /> Rua das Palmeiras, 250 — Centro
+            <MapPin className="h-4 w-4 text-primary" /> Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia
           </p>
           <p className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-primary" /> (11) 90000-0000
@@ -49,7 +49,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Vagbomb BJJ. Todos os direitos reservados.
+        © {new Date().getFullYear()} Vagbomb BJJ — CNPJ 65.468.732/0001-56. Todos os direitos reservados.
       </div>
     </footer>
   );
