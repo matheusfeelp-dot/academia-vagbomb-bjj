@@ -37,12 +37,26 @@ function Contato() {
           </p>
           <p className="flex items-start gap-3">
             <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-            Rua das Palmeiras, 250 — Centro
+            Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia
           </p>
-          <p className="flex items-start gap-3">
-            <Phone className="mt-0.5 h-5 w-5 text-primary" />
-            (11) 90000-0000
-          </p>
+          <a
+            href="https://wa.me/5511947712354"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 transition-colors hover:text-primary"
+          >
+            <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
+            (11) 94771-2354 · WhatsApp
+          </a>
+          <a
+            href="https://wa.me/5511994427936"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 transition-colors hover:text-primary"
+          >
+            <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
+            (11) 99442-7936 · WhatsApp
+          </a>
           <p className="flex items-start gap-3">
             <Instagram className="mt-0.5 h-5 w-5 text-primary" />
             @vagbombbjj
