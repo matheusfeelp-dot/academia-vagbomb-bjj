@@ -31,7 +31,7 @@ const unidades = [
   {
     tag: "Filial",
     nome: "Distrito de Remédios",
-    endereco: "Distrito de Remédios — Salesópolis, SP",
+    endereco: "R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP",
     desc: "Atende a comunidade do distrito com turmas infantis e adultas, no mesmo padrão da matriz.",
   },
   {
