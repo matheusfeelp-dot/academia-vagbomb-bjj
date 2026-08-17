@@ -29,7 +29,10 @@ export function SiteFooter() {
             <MapPin className="h-4 w-4 text-primary" /> Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia
           </p>
           <p className="flex items-center gap-2">
-            <Phone className="h-4 w-4 text-primary" /> (11) 90000-0000
+            <Phone className="h-4 w-4 text-primary" /> (11) 94771-2354
+          </p>
+          <p className="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-primary" /> (11) 99442-7936
           </p>
           <p className="flex items-center gap-2">
             <Instagram className="h-4 w-4 text-primary" /> @vagbombbjj
