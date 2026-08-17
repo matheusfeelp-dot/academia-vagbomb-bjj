@@ -49,7 +49,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Vagbomb BJJ. Todos os direitos reservados.
+        © {new Date().getFullYear()} Vagbomb BJJ — CNPJ 65.468.732/0001-56. Todos os direitos reservados.
       </div>
     </footer>
   );
