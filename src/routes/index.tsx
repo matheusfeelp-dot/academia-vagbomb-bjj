@@ -3,7 +3,7 @@ import { ArrowRight, Baby, HeartHandshake, Shield, Users, Venus } from "lucide-r
 import heroImg from "@/assets/hero-bjj.jpg";
 import faixasImg from "@/assets/kids-faixas.jpg";
 import womenImg from "@/assets/women-bjj.jpg";
-import inclusaoImg from "@/assets/inclusao-bjj.jpg";
+
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
