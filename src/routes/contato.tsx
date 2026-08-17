@@ -71,6 +71,16 @@ function Contato() {
           className="space-y-4 border border-border bg-card p-6"
           onSubmit={(e) => {
             e.preventDefault();
+            const form = e.currentTarget;
+            const nome = (form.elements.namedItem("nome") as HTMLInputElement).value;
+            const tel = (form.elements.namedItem("tel") as HTMLInputElement).value;
+            const turma = (form.elements.namedItem("turma") as HTMLSelectElement).value;
+            const msg = (form.elements.namedItem("msg") as HTMLTextAreaElement).value;
+            const texto = `Olá! Sou ${nome}. Telefone: ${tel}. Tenho interesse na turma: ${turma}. ${msg}`;
+            window.open(
+              `https://wa.me/5511947712354?text=${encodeURIComponent(texto)}`,
+              "_blank",
+            );
             setEnviado(true);
           }}
         >
