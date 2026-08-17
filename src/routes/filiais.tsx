@@ -38,7 +38,7 @@ const unidades = [
     tag: "Filial",
     nome: "Bombeiros 6GB — Bertioga",
     endereco: "Quartel dos Bombeiros 6GB — Bertioga, SP",
-    desc: "Parceria com o quartel dos bombeiros. Turmas abertas ao público, infantis e adultas.",
+    desc: "Parceria com o quartel dos bombeiros. Turmas reservadas a policiais e profissionais de segurança pública.",
   },
 ];
 
