@@ -27,6 +27,7 @@ const grade = [
       { hora: "18:00", turma: "Infantil e Kids (7–12)" },
       { hora: "19:00", turma: "Adulto Gi — iniciantes" },
       { hora: "20:15", turma: "Adulto Gi — avançado" },
+      { hora: "21:00", turma: "Muay Thai", destaque: true },
     ],
   },
   {
@@ -44,13 +45,26 @@ const grade = [
       { hora: "18:00", turma: "Infantil — treino livre" },
       { hora: "19:00", turma: "Defesa pessoal" },
       { hora: "20:15", turma: "Treino livre adulto" },
+      { hora: "21:00", turma: "Muay Thai", destaque: true },
     ],
   },
   {
     dia: "Sábado",
     aulas: [
+      { hora: "06:30", turma: "Muay Thai", destaque: true },
       { hora: "09:00", turma: "Kids — todas as idades" },
       { hora: "10:00", turma: "Open mat (Gi e No-Gi)" },
+    ],
+  },
+];
+
+const gradeDistrito = [
+  {
+    dia: "Segunda e Quarta",
+    aulas: [
+      { hora: "18:00", turma: "Kids 1" },
+      { hora: "19:00", turma: "Kids 2" },
+      { hora: "20:00", turma: "Adultos" },
     ],
   },
 ];
