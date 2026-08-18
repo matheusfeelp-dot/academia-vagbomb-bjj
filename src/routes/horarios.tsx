@@ -84,15 +84,22 @@ function Horarios() {
           <div key={d.dia} className="border border-border bg-card">
             <div className="border-b border-border px-6 py-4">
               <h2 className="text-2xl text-primary">{d.dia}</h2>
+              <p className="text-stencil text-xs text-muted-foreground">Sede — Salesópolis</p>
             </div>
             <ul>
               {d.aulas.map((a) => (
                 <li
                   key={a.hora + a.turma}
-                  className="flex items-baseline gap-4 border-b border-border/60 px-6 py-3 last:border-0"
+                  className={`flex items-baseline gap-4 border-b border-border/60 px-6 py-3 last:border-0 ${
+                    a.destaque ? "bg-accent/10" : ""
+                  }`}
                 >
                   <span className="text-stencil w-16 text-lg text-primary">{a.hora}</span>
-                  <span className="text-sm text-muted-foreground">{a.turma}</span>
+                  <span
+                    className={`text-sm ${a.destaque ? "text-accent font-semibold" : "text-muted-foreground"}`}
+                  >
+                    {a.turma}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -100,9 +107,42 @@ function Horarios() {
         ))}
       </div>
 
+      <div className="mt-16">
+        <p className="text-stencil text-sm text-accent">Filial</p>
+        <h2 className="mt-2 text-3xl">Distrito de Remédios</h2>
+        <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+          R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP. Aulas de Jiu-Jitsu.
+        </p>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {gradeDistrito.map((d) => (
+            <div key={d.dia} className="border border-border bg-card">
+              <div className="border-b border-border px-6 py-4">
+                <h3 className="text-2xl text-primary">{d.dia}</h3>
+                <p className="text-stencil text-xs text-muted-foreground">Distrito de Remédios</p>
+              </div>
+              <ul>
+                {d.aulas.map((a) => (
+                  <li
+                    key={a.hora + a.turma}
+                    className="flex items-baseline gap-4 border-b border-border/60 px-6 py-3 last:border-0"
+                  >
+                    <span className="text-stencil w-16 text-lg text-primary">{a.hora}</span>
+                    <span className="text-sm text-muted-foreground">{a.turma}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <p className="mt-8 text-sm text-muted-foreground">
+        Aulas privadas: consultar horário diretamente com a equipe.
+      </p>
+
       <Link
         to="/contato"
-        className="text-stencil mt-12 inline-block bg-primary px-6 py-3 text-primary-foreground"
+        className="text-stencil mt-8 inline-block bg-primary px-6 py-3 text-primary-foreground"
       >
         Agendar aula experimental
       </Link>
