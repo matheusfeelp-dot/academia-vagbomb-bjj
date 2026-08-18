@@ -31,7 +31,7 @@ const turmas = [
   },
   {
     name: "Infantil e Kids",
-    age: "7 a 12 anos",
+    age: "6 a 12 anos",
     img: kidsImg,
     text: "Fundamentos do jiu-jitsu, disciplina e antibullying. Graduação por mérito e participação em festivais.",
   },

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/horarios")({
       {
         name: "description",
         content:
-          "Grade de horários da Vagbomb BJJ: aulas infantis, adultas, femininas e no-gi de segunda a sábado.",
+          "Grade de horários da Vagbomb BJJ: aulas infantis (a partir de 6 anos), adultas, femininas, no-gi e Muay Thai de segunda a sábado. Menores de 6 anos em aulas particulares.",
       },
       { property: "og:title", content: "Horários das Aulas — Vagbomb BJJ" },
       {
