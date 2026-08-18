@@ -7,7 +7,7 @@ export const Route = createFileRoute("/horarios")({
       {
         name: "description",
         content:
-          "Grade de horários da Vagbomb BJJ: aulas infantis, adultas, femininas e no-gi de segunda a sábado.",
+          "Grade de horários da Vagbomb BJJ: aulas infantis (a partir de 6 anos), adultas, femininas, no-gi e Muay Thai de segunda a sábado. Menores de 6 anos em aulas particulares.",
       },
       { property: "og:title", content: "Horários das Aulas — Vagbomb BJJ" },
       {
@@ -23,8 +23,7 @@ const grade = [
   {
     dia: "Segunda e Quarta",
     aulas: [
-      { hora: "17:00", turma: "Baby Jiu-Jitsu (4–6)" },
-      { hora: "18:00", turma: "Infantil e Kids (7–12)" },
+      { hora: "18:00", turma: "Infantil e Kids (6–12)" },
       { hora: "19:00", turma: "Adulto Gi — iniciantes" },
       { hora: "20:15", turma: "Adulto Gi — avançado" },
       { hora: "21:00", turma: "Muay Thai", destaque: true },
@@ -33,7 +32,7 @@ const grade = [
   {
     dia: "Terça e Quinta",
     aulas: [
-      { hora: "17:00", turma: "Infantil e Kids (7–12)" },
+      { hora: "17:00", turma: "Infantil e Kids (6–12)" },
       { hora: "18:00", turma: "Adolescente (13–17)" },
       { hora: "19:00", turma: "Feminino" },
       { hora: "20:15", turma: "No-Gi / Submission" },
@@ -42,7 +41,7 @@ const grade = [
   {
     dia: "Sexta",
     aulas: [
-      { hora: "18:00", turma: "Infantil — treino livre" },
+      { hora: "18:00", turma: "Infantil (6–12) — treino livre" },
       { hora: "19:00", turma: "Defesa pessoal" },
       { hora: "20:15", turma: "Treino livre adulto" },
       { hora: "21:00", turma: "Muay Thai", destaque: true },
@@ -137,7 +136,8 @@ function Horarios() {
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground">
-        Aulas privadas: consultar horário diretamente com a equipe.
+        Crianças a partir de 6 anos nas turmas infantis. Para idades inferiores, trabalhamos com
+        aulas particulares — consultar horário diretamente com a equipe.
       </p>
 
       <Link

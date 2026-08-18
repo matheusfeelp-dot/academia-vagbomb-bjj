@@ -29,8 +29,8 @@ export const Route = createFileRoute("/")({
 const programs = [
   {
     icon: Baby,
-    title: "Infantil 4–12",
-    text: "Coordenação, disciplina e antibullying em aulas lúdicas e seguras.",
+    title: "Infantil 6–12",
+    text: "A partir dos 6 anos: coordenação, disciplina e antibullying em aulas lúdicas e seguras. Menores de 6 anos atendidos em aulas particulares.",
   },
   {
     icon: Users,
