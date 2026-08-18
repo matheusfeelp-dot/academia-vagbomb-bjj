@@ -22,37 +22,25 @@ export const Route = createFileRoute("/horarios")({
 const grade = [
   {
     dia: "Segunda e Quarta",
-    aulas: [
-      { hora: "18:00", turma: "Infantil e Kids (6–12)" },
-      { hora: "19:00", turma: "Adulto Gi — iniciantes" },
-      { hora: "20:15", turma: "Adulto Gi — avançado" },
-      { hora: "21:00", turma: "Muay Thai", destaque: true },
-    ],
+    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
   },
   {
     dia: "Terça e Quinta",
     aulas: [
-      { hora: "17:00", turma: "Infantil e Kids (6–12)" },
-      { hora: "18:00", turma: "Adolescente (13–17)" },
-      { hora: "19:00", turma: "Feminino" },
-      { hora: "20:15", turma: "No-Gi / Submission" },
+      { hora: "19:00–20:00", turma: "Kids" },
+      { hora: "20:00–21:00", turma: "Juvenil" },
+      { hora: "21:00–22:00", turma: "Adultos" },
     ],
   },
   {
     dia: "Sexta",
-    aulas: [
-      { hora: "18:00", turma: "Infantil (6–12) — treino livre" },
-      { hora: "19:00", turma: "Defesa pessoal" },
-      { hora: "20:15", turma: "Treino livre adulto" },
-      { hora: "21:00", turma: "Muay Thai", destaque: true },
-    ],
+    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
   },
   {
     dia: "Sábado",
     aulas: [
-      { hora: "06:30", turma: "Muay Thai", destaque: true },
-      { hora: "09:00", turma: "Kids — todas as idades" },
-      { hora: "10:00", turma: "Open mat (Gi e No-Gi)" },
+      { hora: "06:30–07:30", turma: "Muay Thai", destaque: true },
+      { hora: "08:30–10:00", turma: "Feminino" },
     ],
   },
 ];
@@ -61,9 +49,9 @@ const gradeDistrito = [
   {
     dia: "Segunda e Quarta",
     aulas: [
-      { hora: "18:00", turma: "Kids 1" },
-      { hora: "19:00", turma: "Kids 2" },
-      { hora: "20:00", turma: "Adultos" },
+      { hora: "18:00–19:00", turma: "Kids 1" },
+      { hora: "19:00–20:00", turma: "Kids 2" },
+      { hora: "20:00–21:00", turma: "Adultos" },
     ],
   },
 ];
