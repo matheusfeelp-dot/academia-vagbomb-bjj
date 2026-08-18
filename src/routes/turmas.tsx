@@ -52,6 +52,7 @@ const turmas = [
     name: "No-Gi / Submission",
     age: "18+",
     img: nogiImg,
+    text: "Luta sem kimono, foco em wrestling, guardas modernas e finalizações de perna.",
   },
   {
     name: "Feminino",
