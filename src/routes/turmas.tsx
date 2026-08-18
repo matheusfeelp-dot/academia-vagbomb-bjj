@@ -24,10 +24,10 @@ export const Route = createFileRoute("/turmas")({
 
 const turmas = [
   {
-    name: "Baby Jiu-Jitsu",
-    age: "4 a 6 anos",
+    name: "Aulas Particulares — até 5 anos",
+    age: "Aulas particulares",
     img: kidsImg,
-    text: "Jogos, quedas seguras e coordenação motora. Aulas de 45 minutos com muito estímulo e nenhuma pressão.",
+    text: "Para crianças menores de 6 anos, oferecemos aulas particulares com atendimento individualizado. Consulte horários e disponibilidade.",
   },
   {
     name: "Infantil e Kids",
