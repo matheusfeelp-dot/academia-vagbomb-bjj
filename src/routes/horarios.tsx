@@ -23,8 +23,7 @@ const grade = [
   {
     dia: "Segunda e Quarta",
     aulas: [
-      { hora: "17:00", turma: "Baby Jiu-Jitsu (4–6)" },
-      { hora: "18:00", turma: "Infantil e Kids (7–12)" },
+      { hora: "18:00", turma: "Infantil e Kids (6–12)" },
       { hora: "19:00", turma: "Adulto Gi — iniciantes" },
       { hora: "20:15", turma: "Adulto Gi — avançado" },
       { hora: "21:00", turma: "Muay Thai", destaque: true },
@@ -33,7 +32,7 @@ const grade = [
   {
     dia: "Terça e Quinta",
     aulas: [
-      { hora: "17:00", turma: "Infantil e Kids (7–12)" },
+      { hora: "17:00", turma: "Infantil e Kids (6–12)" },
       { hora: "18:00", turma: "Adolescente (13–17)" },
       { hora: "19:00", turma: "Feminino" },
       { hora: "20:15", turma: "No-Gi / Submission" },
@@ -42,7 +41,7 @@ const grade = [
   {
     dia: "Sexta",
     aulas: [
-      { hora: "18:00", turma: "Infantil — treino livre" },
+      { hora: "18:00", turma: "Infantil (6–12) — treino livre" },
       { hora: "19:00", turma: "Defesa pessoal" },
       { hora: "20:15", turma: "Treino livre adulto" },
       { hora: "21:00", turma: "Muay Thai", destaque: true },
