@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import kidsImg from "@/assets/kids-bjj.jpg";
 import womenImg from "@/assets/women-bjj.jpg";
 import heroImg from "@/assets/hero-bjj.jpg";
+import nogiImg from "@/assets/nogi-bjj.jpg";
 
 export const Route = createFileRoute("/turmas")({
   head: () => ({
@@ -50,8 +51,7 @@ const turmas = [
   {
     name: "No-Gi / Submission",
     age: "18+",
-    img: heroImg,
-    text: "Luta sem kimono, foco em wrestling, guardas modernas e finalizações de perna.",
+    img: nogiImg,
   },
   {
     name: "Feminino",

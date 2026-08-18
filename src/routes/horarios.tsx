@@ -81,7 +81,7 @@ function Horarios() {
                     a.destaque ? "bg-accent/10" : ""
                   }`}
                 >
-                  <span className="text-stencil w-16 text-lg text-primary">{a.hora}</span>
+                  <span className="text-stencil w-28 text-lg text-primary">{a.hora}</span>
                   <span
                     className={`text-sm ${a.destaque ? "text-accent font-semibold" : "text-muted-foreground"}`}
                   >
@@ -113,7 +113,7 @@ function Horarios() {
                     key={a.hora + a.turma}
                     className="flex items-baseline gap-4 border-b border-border/60 px-6 py-3 last:border-0"
                   >
-                    <span className="text-stencil w-16 text-lg text-primary">{a.hora}</span>
+                    <span className="text-stencil w-28 text-lg text-primary">{a.hora}</span>
                     <span className="text-sm text-muted-foreground">{a.turma}</span>
                   </li>
                 ))}
