@@ -7,7 +7,7 @@ export const Route = createFileRoute("/horarios")({
       {
         name: "description",
         content:
-          "Grade de horários da Vagbomb BJJ: aulas infantis (a partir de 6 anos), adultas, femininas, no-gi e Muay Thai de segunda a sábado. Menores de 6 anos em aulas particulares.",
+          "Grade de horários da Vagbomb BJJ: aulas juvenis (a partir de 6 anos), adultas, femininas, no-gi e Muay Thai de segunda a sábado. Menores de 6 anos em aulas particulares.",
       },
       { property: "og:title", content: "Horários das Aulas — Vagbomb BJJ" },
       {
@@ -124,7 +124,7 @@ function Horarios() {
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground">
-        Crianças a partir de 6 anos nas turmas infantis. Para idades inferiores, trabalhamos com
+        Crianças a partir de 6 anos nas turmas juvenis. Para idades inferiores, trabalhamos com
         aulas particulares — consultar horário diretamente com a equipe.
       </p>
 

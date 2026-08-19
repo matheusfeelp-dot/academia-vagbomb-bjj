@@ -37,7 +37,7 @@ function Contato() {
           </p>
           <p className="flex items-start gap-3">
             <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-            Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia
+            Salesópolis — SP
           </p>
           <a
             href="https://wa.me/5511947712354"
@@ -57,10 +57,15 @@ function Contato() {
             <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
             (11) 99442-7936 · WhatsApp
           </a>
-          <p className="flex items-start gap-3">
+          <a
+            href="https://www.instagram.com/vagbombbjjteam__?igsh=dGNndjVtNDJqdmU2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 transition-colors hover:text-primary"
+          >
             <Instagram className="mt-0.5 h-5 w-5 text-primary" />
-            @vagbombbjj
-          </p>
+            @vagbombbjjteam__
+          </a>
           <p className="flex items-start gap-3">
             <Clock className="mt-0.5 h-5 w-5 text-primary" />
             Seg a sex 16h–22h · Sáb 08h–12h
@@ -112,7 +117,7 @@ function Contato() {
               id="turma"
               className="mt-1 w-full border border-input bg-background px-3 py-2 text-sm outline-none focus:border-primary"
             >
-              <option>Infantil</option>
+              <option>Juvenil</option>
               <option>Adolescente</option>
               <option>Adulto Gi</option>
               <option>No-Gi</option>
