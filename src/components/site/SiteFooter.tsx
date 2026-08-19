@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, MapPin, Phone } from "lucide-react";
+import { Instagram, MapPin, MessageCircle } from "lucide-react";
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
+
+const INSTAGRAM_URL = "https://www.instagram.com/vagbombbjjteam__?igsh=dGNndjVtNDJqdmU2";
 
 export function SiteFooter() {
   return (
@@ -26,17 +28,32 @@ export function SiteFooter() {
 
         <div className="space-y-3 text-sm text-muted-foreground">
           <p className="flex items-center gap-2">
-            <MapPin className="h-4 w-4 text-primary" /> Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia
+            <MapPin className="h-4 w-4 text-primary" /> Salesópolis — SP
           </p>
-          <p className="flex items-center gap-2">
-            <Phone className="h-4 w-4 text-primary" /> (11) 94771-2354
-          </p>
-          <p className="flex items-center gap-2">
-            <Phone className="h-4 w-4 text-primary" /> (11) 99442-7936
-          </p>
-          <p className="flex items-center gap-2">
-            <Instagram className="h-4 w-4 text-primary" /> @vagbombbjj
-          </p>
+          <a
+            href="https://wa.me/5511947712354"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <MessageCircle className="h-4 w-4 text-primary" /> (11) 94771-2354 · WhatsApp
+          </a>
+          <a
+            href="https://wa.me/5511994427936"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <MessageCircle className="h-4 w-4 text-primary" /> (11) 99442-7936 · WhatsApp
+          </a>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <Instagram className="h-4 w-4 text-primary" /> @vagbombbjjteam__
+          </a>
         </div>
 
         <div className="flex flex-col gap-2 text-sm">

@@ -25,19 +25,19 @@ const unidades = [
   {
     tag: "Sede",
     nome: "Salesópolis",
-    endereco: "Rua Prefeito Antônio de Camargo Primo, 10 — Jardim Nídia, Salesópolis — SP",
+    endereco: "Salesópolis — SP",
     desc: "Matriz da Vagbomb BJJ. Estrutura completa com tatame, vestiários e sala de musculação.",
   },
   {
     tag: "Filial",
     nome: "Distrito de Remédios",
     endereco: "R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP",
-    desc: "Atende a comunidade do distrito com turmas infantis e adultas, no mesmo padrão da matriz.",
+    desc: "Atende a comunidade do distrito com turmas juvenis e adultas, no mesmo padrão da matriz.",
   },
   {
     tag: "Filial",
     nome: "Bombeiros 6GB — Bertioga",
-    endereco: "Quartel dos Bombeiros 6GB — Bertioga, SP",
+    endereco: "",
     desc: "Parceria com o quartel dos bombeiros. Turmas reservadas a policiais e profissionais de segurança pública.",
   },
 ];
@@ -65,10 +65,12 @@ function Filiais() {
               {u.tag}
             </span>
             <h2 className="mt-4 text-2xl">{u.nome}</h2>
-            <p className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-              {u.endereco}
-            </p>
+            {u.endereco && (
+              <p className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                {u.endereco}
+              </p>
+            )}
             <p className="mt-3 text-sm text-muted-foreground">{u.desc}</p>
             <Link
               to="/contato"

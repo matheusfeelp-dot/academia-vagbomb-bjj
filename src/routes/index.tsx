@@ -1,25 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Baby, HeartHandshake, Shield, Users, Venus } from "lucide-react";
-import heroImg from "@/assets/hero-bjj.jpg";
-import faixasImg from "@/assets/kids-faixas.jpg";
-import womenImg from "@/assets/women-bjj.jpg";
-
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vagbomb BJJ — Academia de Jiu-Jitsu Infantil e Adulto" },
+      { title: "Vagbomb BJJ — Academia de Jiu-Jitsu Juvenil e Adulto" },
       {
         name: "description",
         content:
-          "Academia Vagbomb BJJ: turmas de jiu-jitsu brasileiro para crianças, adolescentes, adultos, masculino e feminino. Primeira aula grátis.",
+          "Academia Vagbomb BJJ: turmas de jiu-jitsu brasileiro para juvenil, adolescentes, adultos, masculino e feminino. Primeira aula grátis.",
       },
       { property: "og:title", content: "Vagbomb BJJ — Jiu-Jitsu para toda a família" },
       {
         property: "og:description",
         content:
-          "Turmas infantis, adultas, masculinas e femininas de jiu-jitsu. Venha treinar na Vagbomb BJJ.",
+          "Turmas juvenis, adultas, masculinas e femininas de jiu-jitsu. Venha treinar na Vagbomb BJJ.",
       },
     ],
   }),
@@ -29,7 +25,7 @@ export const Route = createFileRoute("/")({
 const programs = [
   {
     icon: Baby,
-    title: "Infantil 6–12",
+    title: "Juvenil 6–12",
     text: "A partir dos 6 anos: coordenação, disciplina e antibullying em aulas lúdicas e seguras. Menores de 6 anos atendidos em aulas particulares.",
   },
   {
@@ -52,15 +48,7 @@ const programs = [
 function Home() {
   return (
     <>
-      <section className="relative overflow-hidden">
-        <img
-          src={heroImg}
-          alt="Atletas treinando jiu-jitsu na academia Vagbomb"
-          width={1600}
-          height={1008}
-          className="absolute inset-0 h-full w-full object-cover opacity-45"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
+      <section className="relative overflow-hidden border-b border-border">
         <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-36">
           <img
             src={logo.url}
@@ -75,7 +63,7 @@ function Home() {
             <span className="text-primary">para toda a família</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-            Turmas infantis e adultas, masculinas e femininas. Do primeiro dia no tatame
+            Turmas juvenis e adultas, masculinas e femininas. Do primeiro dia no tatame
             até a faixa preta, no ritmo certo para você.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -117,54 +105,47 @@ function Home() {
       </section>
 
       <section className="border-y border-border bg-card">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center">
+        <div className="mx-auto max-w-3xl px-5 py-20 text-center">
           <img
-            src={faixasImg}
-            alt="Crianças de jiu-jitsu com faixas verde, amarela e branca com graus coloridos"
-            width={1200}
-            height={912}
-            loading="lazy"
-            className="w-full border border-border object-cover"
+            src={logo.url}
+            alt="Escudo Vagbomb BJJ"
+            width={80}
+            height={80}
+            className="mx-auto h-16 w-16 rounded-full border-2 border-primary object-cover"
           />
-          <div>
-            <p className="text-stencil text-sm text-accent">Infantil</p>
-            <h2 className="mt-2 text-4xl">Confiança que sai do tatame</h2>
-            <p className="mt-4 text-muted-foreground">
-              As aulas infantis unem brincadeira e técnica. As crianças aprendem respeito,
-              foco e como se defender — e levam isso para a escola e para casa.
-            </p>
-            <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-              <li>• Turmas separadas por idade e tamanho</li>
-              <li>• Graduação com faixas verde, amarela e branca com graus coloridos</li>
-              <li>• Professores certificados e formação continuada</li>
-            </ul>
-          </div>
+          <p className="text-stencil mt-6 text-sm text-accent">Juvenil</p>
+          <h2 className="mt-2 text-4xl">Confiança que sai do tatame</h2>
+          <p className="mt-4 text-muted-foreground">
+            As aulas juvenis unem brincadeira e técnica. As crianças aprendem respeito,
+            foco e como se defender — e levam isso para a escola e para casa.
+          </p>
+          <ul className="mt-6 space-y-2 text-left text-sm text-muted-foreground">
+            <li>• Turmas separadas por idade e tamanho</li>
+            <li>• Graduação com faixas verde, amarela e branca com graus coloridos</li>
+            <li>• Professores certificados e formação continuada</li>
+          </ul>
+          <Link
+            to="/contato"
+            className="text-stencil mt-8 inline-flex items-center gap-2 text-primary"
+          >
+            Agendar aula juvenil <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center">
-        <div className="order-2 md:order-1">
-          <p className="text-stencil text-sm text-accent">Feminino</p>
-          <h2 className="mt-2 text-4xl">Força, técnica e irmandade</h2>
-          <p className="mt-4 text-muted-foreground">
-            Turma feminina com professora responsável, foco em defesa pessoal e
-            progressão técnica. Você não precisa ter experiência nenhuma para começar.
-          </p>
-          <Link
-            to="/turmas"
-            className="text-stencil mt-6 inline-flex items-center gap-2 text-primary"
-          >
-            Conhecer as turmas <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-        <img
-          src={womenImg}
-          alt="Turma feminina de jiu-jitsu treinando"
-          width={1200}
-          height={900}
-          loading="lazy"
-          className="order-1 w-full border border-border object-cover md:order-2"
-        />
+      <section className="mx-auto max-w-3xl px-5 py-20 text-center">
+        <p className="text-stencil text-sm text-accent">Feminino</p>
+        <h2 className="mt-2 text-4xl">Força, técnica e irmandade</h2>
+        <p className="mt-4 text-muted-foreground">
+          Turma feminina com professora responsável, foco em defesa pessoal e
+          progressão técnica. Você não precisa ter experiência nenhuma para começar.
+        </p>
+        <Link
+          to="/turmas"
+          className="text-stencil mt-6 inline-flex items-center gap-2 text-primary"
+        >
+          Conhecer as turmas <ArrowRight className="h-4 w-4" />
+        </Link>
       </section>
 
       <section className="border-y border-border bg-card">
@@ -191,7 +172,6 @@ function Home() {
           </Link>
         </div>
       </section>
-
 
       <section className="hazard-stripe">
         <div className="bg-background/90">

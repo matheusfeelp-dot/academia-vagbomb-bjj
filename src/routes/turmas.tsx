@@ -1,8 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import kidsImg from "@/assets/kids-bjj.jpg";
-import womenImg from "@/assets/women-bjj.jpg";
-import heroImg from "@/assets/hero-bjj.jpg";
-import nogiImg from "@/assets/nogi-bjj.jpg";
+import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/turmas")({
   head: () => ({
@@ -11,12 +8,12 @@ export const Route = createFileRoute("/turmas")({
       {
         name: "description",
         content:
-          "Turmas de jiu-jitsu na Vagbomb BJJ: infantil, adolescente, adulto gi e no-gi, feminino e defesa pessoal.",
+          "Turmas de jiu-jitsu na Vagbomb BJJ: juvenil, adolescente, adulto gi e no-gi, feminino e defesa pessoal.",
       },
       { property: "og:title", content: "Turmas de Jiu-Jitsu — Vagbomb BJJ" },
       {
         property: "og:description",
-        content: "Infantil, adolescente, adulto, feminino e defesa pessoal.",
+        content: "Juvenil, adolescente, adulto, feminino e defesa pessoal.",
       },
     ],
   }),
@@ -27,37 +24,31 @@ const turmas = [
   {
     name: "Aulas Particulares — até 5 anos",
     age: "Aulas particulares",
-    img: kidsImg,
     text: "Para crianças menores de 6 anos, oferecemos aulas particulares com atendimento individualizado. Consulte horários e disponibilidade.",
   },
   {
-    name: "Infantil e Kids",
+    name: "Juvenil e Kids",
     age: "6 a 12 anos",
-    img: kidsImg,
     text: "Fundamentos do jiu-jitsu, disciplina e antibullying. Graduação por mérito e participação em festivais.",
   },
   {
     name: "Adolescente",
     age: "13 a 17 anos",
-    img: heroImg,
     text: "Transição para o treino adulto: técnica, condicionamento e sparring supervisionado.",
   },
   {
     name: "Adulto Gi",
     age: "18+ · masculino e feminino",
-    img: heroImg,
     text: "Aula completa com aquecimento, técnica do dia e treino livre. Trilhas separadas para iniciantes.",
   },
   {
     name: "No-Gi / Submission",
     age: "18+",
-    img: nogiImg,
     text: "Luta sem kimono, foco em wrestling, guardas modernas e finalizações de perna.",
   },
   {
     name: "Feminino",
     age: "Exclusiva mulheres",
-    img: womenImg,
     text: "Ambiente acolhedor, professora responsável e defesa pessoal aplicada ao dia a dia.",
   },
 ];
@@ -74,19 +65,23 @@ function Turmas() {
 
       <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {turmas.map((t) => (
-          <article key={t.name} className="border border-border bg-card">
-            <img
-              src={t.img}
-              alt={`Turma ${t.name}`}
-              width={1200}
-              height={900}
-              loading="lazy"
-              className="h-44 w-full object-cover"
-            />
+          <article key={t.name} className="overflow-hidden border border-border bg-card">
+            <div className="hazard-stripe h-1.5 w-full" />
             <div className="p-6">
-              <p className="text-stencil text-xs text-primary">{t.age}</p>
-              <h2 className="mt-1 text-2xl">{t.name}</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{t.text}</p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={logo.url}
+                  alt="Escudo Vagbomb BJJ"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-full border border-primary object-cover"
+                />
+                <div>
+                  <p className="text-stencil text-xs text-primary">{t.age}</p>
+                  <h2 className="text-2xl">{t.name}</h2>
+                </div>
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground">{t.text}</p>
             </div>
           </article>
         ))}
