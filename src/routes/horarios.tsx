@@ -38,7 +38,7 @@ const grade = [
   },
   {
     dia: "Sábado",
-    aulas: [{ hora: "08:30–10:00", turma: "Feminino" }],
+    aulas: [{ hora: "08:30–10:00", turma: "Feminino", destaque: false }],
   },
 ];
 
