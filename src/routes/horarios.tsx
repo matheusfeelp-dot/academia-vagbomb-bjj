@@ -27,9 +27,9 @@ const grade = [
   {
     dia: "Terça e Quinta",
     aulas: [
-      { hora: "19:00–20:00", turma: "Kids" },
-      { hora: "20:00–21:00", turma: "Juvenil" },
-      { hora: "21:00–22:00", turma: "Adultos" },
+      { hora: "19:00–20:00", turma: "Kids", destaque: false },
+      { hora: "20:00–21:00", turma: "Juvenil", destaque: false },
+      { hora: "21:00–22:00", turma: "Adultos", destaque: false },
     ],
   },
   {
@@ -38,10 +38,7 @@ const grade = [
   },
   {
     dia: "Sábado",
-    aulas: [
-      { hora: "06:30–07:30", turma: "Muay Thai", destaque: true },
-      { hora: "08:30–10:00", turma: "Feminino" },
-    ],
+    aulas: [{ hora: "08:30–10:00", turma: "Feminino", destaque: false }],
   },
 ];
 
