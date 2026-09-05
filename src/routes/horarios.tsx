@@ -145,9 +145,26 @@ function Horarios() {
                   </li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+      </div>
+
+      <div className="mt-12 border border-border bg-card p-6">
+        <h2 className="text-2xl text-primary">Personal de Jiu-Jitsu</h2>
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          Trabalhamos com aulas particulares de jiu-jitsu (personal) com nossos professores, em
+          horário a combinar. Ideal para quem busca atenção individual, evolução acelerada ou
+          turmas para crianças menores de 6 anos.
+        </p>
+        <a
+          href="https://wa.me/5511947712354?text=Ol%C3%A1!%20Tenho%20interesse%20em%20aulas%20particulares%20de%20jiu-jitsu%20(personal)."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-stencil mt-4 inline-block bg-primary px-6 py-3 text-primary-foreground"
+        >
+          Solicitar personal no WhatsApp
+        </a>
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground">
