@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Baby, HeartHandshake, Shield, Users, Venus } from "lucide-react";
+import { ArrowRight, Baby, Shield, Users, Venus } from "lucide-react";
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
+import ibjjf from "@/assets/ibjjf-graduacao.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -121,7 +122,6 @@ function Home() {
           </p>
           <ul className="mt-6 space-y-2 text-left text-sm text-muted-foreground">
             <li>• Turmas separadas por idade e tamanho</li>
-            <li>• Graduação com faixas verde, amarela e branca com graus coloridos</li>
             <li>• Professores certificados e formação continuada</li>
           </ul>
           <Link
@@ -153,13 +153,13 @@ function Home() {
           <p className="text-stencil text-sm text-accent">Inclusão</p>
           <h2 className="mt-2 text-4xl">Jiu-jitsu para todos os cérebros</h2>
           <p className="mt-4 text-muted-foreground">
-            Aulas adaptadas para alunos no espectro autista e com TDAH. Ambiente
-            calmo, estímulos controlados e professores preparados para acolher cada
-            aluno no seu ritmo — o tatame como espaço de regulação, foco e
-            autoestima.
+            Aulas adaptadas para alunos no espectro autista (TEA) e com TDAH.
+            Ambiente calmo, estímulos controlados e professores preparados para
+            acolher cada aluno no seu ritmo — o tatame como espaço de regulação,
+            foco e autoestima.
           </p>
           <ul className="mt-6 space-y-2 text-left text-sm text-muted-foreground">
-            <li>• Turma exclusiva de inclusão (autismo e TDAH)</li>
+            <li>• Turma exclusiva de inclusão (TEA e TDAH)</li>
             <li>• Aulas com redução de estímulos sensoriais</li>
             <li>• Professores capacitados em neurodivergência</li>
             <li>• Acompanhamento individualizado do progresso</li>
@@ -170,6 +170,40 @@ function Home() {
           >
             Agendar aula de inclusão <ArrowRight className="h-4 w-4" />
           </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-5 py-20">
+        <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
+          <div className="md:flex-1">
+            <p className="text-stencil text-sm text-accent">Filiação</p>
+            <h2 className="mt-2 text-4xl">Registrados na IBJJF e CBJJ</h2>
+            <p className="mt-4 text-muted-foreground">
+              Somos filiados à <strong className="text-foreground">IBJJF</strong>{" "}
+              (International Brazilian Jiu-Jitsu Federation) e à{" "}
+              <strong className="text-foreground">CBJJ</strong> (Confederação
+              Brasileira de Jiu-Jitsu). Nossos alunos seguem o sistema oficial de
+              graduação, com faixas e graus reconhecidos em qualquer campeonato
+              do Brasil e do mundo.
+            </p>
+            <Link
+              to="/contato"
+              className="text-stencil mt-6 inline-flex items-center gap-2 bg-primary px-6 py-3 text-primary-foreground"
+            >
+              Quero começar <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="md:flex-1">
+            <img
+              src={ibjjf.url}
+              alt="Sistema de graduação IBJJF — idades mínimas, hierarquia e graus das faixas"
+              className="w-full border border-border object-contain"
+              loading="lazy"
+            />
+            <p className="text-stencil mt-2 text-center text-xs text-muted-foreground">
+              Sistema oficial de graduação IBJJF
+            </p>
+          </div>
         </div>
       </section>
 
