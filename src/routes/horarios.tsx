@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import imgFaixa from "@/assets/ritbox-faixa.jpg.asset.json";
+import imgKids from "@/assets/ritbox-kids.jpg.asset.json";
+import imgAtleta from "@/assets/ritbox-atleta.jpg.asset.json";
 
 export const Route = createFileRoute("/horarios")({
   head: () => ({
@@ -22,7 +25,10 @@ export const Route = createFileRoute("/horarios")({
 const grade = [
   {
     dia: "Segunda e Quarta",
-    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
+    aulas: [
+      { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
+      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+    ],
   },
   {
     dia: "Terça e Quinta",
@@ -34,7 +40,10 @@ const grade = [
   },
   {
     dia: "Sexta",
-    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
+    aulas: [
+      { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
+      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+    ],
   },
   {
     dia: "Sábado",
@@ -62,6 +71,27 @@ function Horarios() {
         Chegue 10 minutos antes da aula. Alunos novos podem experimentar qualquer turma da
         sua faixa etária.
       </p>
+
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        <img
+          src={imgFaixa.url}
+          alt="Graduação de faixa na Vagbomb BJJ"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+        <img
+          src={imgKids.url}
+          alt="Aula de jiu-jitsu infantil na Vagbomb BJJ"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+        <img
+          src={imgAtleta.url}
+          alt="Atleta da Vagbomb BJJ durante o treino"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+      </div>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {grade.map((d) => (
@@ -115,9 +145,26 @@ function Horarios() {
                   </li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+      </div>
+
+      <div className="mt-12 border border-border bg-card p-6">
+        <h2 className="text-2xl text-primary">Personal de Jiu-Jitsu</h2>
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          Trabalhamos com aulas particulares de jiu-jitsu (personal) com nossos professores, em
+          horário a combinar. Ideal para quem busca atenção individual, evolução acelerada ou
+          turmas para crianças menores de 6 anos.
+        </p>
+        <a
+          href="https://wa.me/5511947712354?text=Ol%C3%A1!%20Tenho%20interesse%20em%20aulas%20particulares%20de%20jiu-jitsu%20(personal)."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-stencil mt-4 inline-block bg-primary px-6 py-3 text-primary-foreground"
+        >
+          Solicitar personal no WhatsApp
+        </a>
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground">
