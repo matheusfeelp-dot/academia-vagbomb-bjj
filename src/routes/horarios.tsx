@@ -25,7 +25,10 @@ export const Route = createFileRoute("/horarios")({
 const grade = [
   {
     dia: "Segunda e Quarta",
-    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
+    aulas: [
+      { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
+      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+    ],
   },
   {
     dia: "Terça e Quinta",
@@ -37,7 +40,10 @@ const grade = [
   },
   {
     dia: "Sexta",
-    aulas: [{ hora: "21:00–22:00", turma: "Muay Thai", destaque: true }],
+    aulas: [
+      { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
+      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+    ],
   },
   {
     dia: "Sábado",
