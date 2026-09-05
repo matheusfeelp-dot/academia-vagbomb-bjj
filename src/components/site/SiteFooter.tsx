@@ -63,6 +63,9 @@ export function SiteFooter() {
           <Link to="/horarios" className="text-stencil hover:text-primary">
             Horários
           </Link>
+          <Link to="/colaboradores" className="text-stencil hover:text-primary">
+            Colaboradores
+          </Link>
           <Link to="/contato" className="text-stencil hover:text-primary">
             Contato
           </Link>
