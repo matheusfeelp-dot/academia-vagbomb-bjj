@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import imgFaixa from "@/assets/ritbox-faixa.jpg.asset.json";
+import imgKids from "@/assets/ritbox-kids.jpg.asset.json";
+import imgAtleta from "@/assets/ritbox-atleta.jpg.asset.json";
 
 export const Route = createFileRoute("/horarios")({
   head: () => ({
