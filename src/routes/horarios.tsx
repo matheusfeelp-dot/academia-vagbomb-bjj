@@ -72,6 +72,27 @@ function Horarios() {
         sua faixa etária.
       </p>
 
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        <img
+          src={imgFaixa.url}
+          alt="Graduação de faixa na Vagbomb BJJ"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+        <img
+          src={imgKids.url}
+          alt="Aula de jiu-jitsu infantil na Vagbomb BJJ"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+        <img
+          src={imgAtleta.url}
+          alt="Atleta da Vagbomb BJJ durante o treino"
+          className="aspect-[3/4] w-full border border-border object-cover"
+          loading="lazy"
+        />
+      </div>
+
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {grade.map((d) => (
           <div key={d.dia} className="border border-border bg-card">
