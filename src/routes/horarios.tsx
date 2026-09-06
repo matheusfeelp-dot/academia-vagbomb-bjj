@@ -55,9 +55,9 @@ const gradeDistrito = [
   {
     dia: "Segunda e Quarta",
     aulas: [
-      { hora: "18:00–19:00", turma: "Kids 1" },
-      { hora: "19:00–20:00", turma: "Kids 2" },
-      { hora: "20:00–21:00", turma: "Adultos" },
+      { hora: "18:00–19:00", turma: "Kids 1 · Prof Matheus" },
+      { hora: "19:00–20:00", turma: "Kids 2 · Prof Matheus" },
+      { hora: "20:00–21:00", turma: "Adultos · Prof Matheus" },
     ],
   },
 ];
