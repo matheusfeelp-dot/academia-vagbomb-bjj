@@ -125,7 +125,8 @@ function Horarios() {
         <p className="text-stencil text-sm text-accent">Filial</p>
         <h2 className="mt-2 text-3xl">Distrito de Remédios</h2>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-          R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP. Aulas de Jiu-Jitsu.
+          R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP. Aulas de Jiu-Jitsu
+          ministradas pelo <span className="text-foreground font-semibold">Prof. Matheus Felipe</span>.
         </p>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {gradeDistrito.map((d) => (
