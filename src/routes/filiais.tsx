@@ -26,21 +26,25 @@ const unidades = [
     tag: "Sede",
     nome: "Salesópolis",
     endereco: "Salesópolis — SP",
+    mapa: "Salesópolis, SP, Brasil",
     desc: "Matriz da Vagbomb BJJ. Estrutura completa com tatame, vestiários e sala de musculação.",
   },
   {
     tag: "Filial",
     nome: "Distrito de Remédios",
     endereco: "R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP",
+    mapa: "R. Joaquim Domingues Martins, Nossa Senhora do Remédio, Salesópolis, SP, Brasil",
     desc: "Atende a comunidade do distrito com turmas juvenis e adultas, no mesmo padrão da matriz.",
   },
   {
     tag: "Filial",
     nome: "Bombeiros 6GB — Bertioga",
     endereco: "",
+    mapa: "Corpo de Bombeiros, Bertioga, SP, Brasil",
     desc: "Parceria com o quartel dos bombeiros. Turmas reservadas a policiais e profissionais de segurança pública.",
   },
 ];
+
 
 function Filiais() {
   return (
@@ -72,12 +76,32 @@ function Filiais() {
               </p>
             )}
             <p className="mt-3 text-sm text-muted-foreground">{u.desc}</p>
+
+            <div className="mt-5 aspect-video w-full overflow-hidden border border-border">
+              <iframe
+                title={`Mapa — ${u.nome}`}
+                src={`https://www.google.com/maps?q=${encodeURIComponent(u.mapa)}&hl=pt-BR&z=14&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full grayscale-[35%] transition-all hover:grayscale-0"
+              />
+            </div>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(u.mapa)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stencil mt-3 inline-flex items-center gap-2 text-xs text-accent hover:text-primary"
+            >
+              <MapPin className="h-3.5 w-3.5" /> Abrir no Google Maps
+            </a>
+
             <Link
               to="/contato"
               className="text-stencil mt-auto inline-flex items-center gap-2 pt-6 text-primary"
             >
               Agendar aula nesta unidade <ArrowRight className="h-4 w-4" />
             </Link>
+
           </div>
         ))}
       </div>

@@ -173,39 +173,49 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-5 py-20">
-        <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
-          <div className="md:flex-1">
-            <p className="text-stencil text-sm text-accent">Filiação</p>
-            <h2 className="mt-2 text-4xl">Registrados na IBJJF e CBJJ</h2>
-            <p className="mt-4 text-muted-foreground">
-              Somos filiados à <strong className="text-foreground">IBJJF</strong>{" "}
-              (International Brazilian Jiu-Jitsu Federation) e à{" "}
-              <strong className="text-foreground">CBJJ</strong> (Confederação
-              Brasileira de Jiu-Jitsu). Nossos alunos seguem o sistema oficial de
-              graduação, com faixas e graus reconhecidos em qualquer campeonato
-              do Brasil e do mundo.
-            </p>
-            <Link
-              to="/contato"
-              className="text-stencil mt-6 inline-flex items-center gap-2 bg-primary px-6 py-3 text-primary-foreground"
-            >
-              Quero começar <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-          <div className="md:flex-1">
-            <img
-              src={ibjjf.url}
-              alt="Sistema de graduação IBJJF — idades mínimas, hierarquia e graus das faixas"
-              className="w-full border border-border object-contain"
-              loading="lazy"
-            />
-            <p className="text-stencil mt-2 text-center text-xs text-muted-foreground">
-              Sistema oficial de graduação IBJJF
-            </p>
-          </div>
+      <section className="mx-auto max-w-5xl px-5 py-20">
+        <div className="text-center">
+          <p className="text-stencil text-sm text-accent">Filiação</p>
+          <h2 className="mt-2 text-4xl">Registrados na IBJJF e CBJJ</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Somos filiados à <strong className="text-foreground">IBJJF</strong>{" "}
+            (International Brazilian Jiu-Jitsu Federation) e à{" "}
+            <strong className="text-foreground">CBJJ</strong> (Confederação
+            Brasileira de Jiu-Jitsu). Nossos alunos seguem o sistema oficial de
+            graduação, com faixas e graus reconhecidos em qualquer campeonato
+            do Brasil e do mundo.
+          </p>
+        </div>
+
+        <a
+          href={ibjjf.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 block border border-border bg-white p-2 transition-colors hover:border-primary"
+        >
+          <img
+            src={ibjjf.url}
+            alt="Sistema de graduação IBJJF — idades mínimas, hierarquia e graus das faixas"
+            className="w-full object-contain"
+            loading="lazy"
+            decoding="async"
+            style={{ imageRendering: "crisp-edges" }}
+          />
+        </a>
+        <p className="text-stencil mt-3 text-center text-xs text-muted-foreground">
+          Sistema oficial de graduação IBJJF — toque na imagem para ampliar
+        </p>
+
+        <div className="mt-8 text-center">
+          <Link
+            to="/contato"
+            className="text-stencil inline-flex items-center gap-2 bg-primary px-6 py-3 text-primary-foreground"
+          >
+            Quero começar <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
+
 
       <section className="hazard-stripe">
         <div className="bg-background/90">
