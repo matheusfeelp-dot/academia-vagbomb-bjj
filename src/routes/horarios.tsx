@@ -27,27 +27,27 @@ const grade = [
     dia: "Segunda e Quarta",
     aulas: [
       { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
-      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+      { hora: "21:00–22:00", turma: "Muay Thai · Prof Rodrigo", destaque: true },
     ],
   },
   {
     dia: "Terça e Quinta",
     aulas: [
-      { hora: "19:00–20:00", turma: "Kids", destaque: false },
-      { hora: "20:00–21:00", turma: "Juvenil", destaque: false },
-      { hora: "21:00–22:00", turma: "Adultos", destaque: false },
+      { hora: "19:00–20:00", turma: "Kids · Prof Vagner", destaque: false },
+      { hora: "20:00–21:00", turma: "Juvenil · Prof Vagner", destaque: false },
+      { hora: "21:00–22:00", turma: "Adultos · Prof Vagner", destaque: false },
     ],
   },
   {
     dia: "Sexta",
     aulas: [
       { hora: "19:00–20:00", turma: "Ritbox · Prof Juliana", destaque: false },
-      { hora: "21:00–22:00", turma: "Muay Thai", destaque: true },
+      { hora: "21:00–22:00", turma: "Muay Thai · Prof Rodrigo", destaque: true },
     ],
   },
   {
     dia: "Sábado",
-    aulas: [{ hora: "08:30–10:00", turma: "Feminino", destaque: false }],
+    aulas: [{ hora: "08:30–10:00", turma: "Feminino · Prof Suellen", destaque: false }],
   },
 ];
 
