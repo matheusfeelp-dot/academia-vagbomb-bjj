@@ -76,12 +76,32 @@ function Filiais() {
               </p>
             )}
             <p className="mt-3 text-sm text-muted-foreground">{u.desc}</p>
+
+            <div className="mt-5 aspect-video w-full overflow-hidden border border-border">
+              <iframe
+                title={`Mapa — ${u.nome}`}
+                src={`https://www.google.com/maps?q=${encodeURIComponent(u.mapa)}&hl=pt-BR&z=14&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full grayscale-[35%] transition-all hover:grayscale-0"
+              />
+            </div>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(u.mapa)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stencil mt-3 inline-flex items-center gap-2 text-xs text-accent hover:text-primary"
+            >
+              <MapPin className="h-3.5 w-3.5" /> Abrir no Google Maps
+            </a>
+
             <Link
               to="/contato"
               className="text-stencil mt-auto inline-flex items-center gap-2 pt-6 text-primary"
             >
               Agendar aula nesta unidade <ArrowRight className="h-4 w-4" />
             </Link>
+
           </div>
         ))}
       </div>
