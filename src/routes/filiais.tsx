@@ -26,21 +26,25 @@ const unidades = [
     tag: "Sede",
     nome: "Salesópolis",
     endereco: "Salesópolis — SP",
+    mapa: "Salesópolis, SP, Brasil",
     desc: "Matriz da Vagbomb BJJ. Estrutura completa com tatame, vestiários e sala de musculação.",
   },
   {
     tag: "Filial",
     nome: "Distrito de Remédios",
     endereco: "R. Joaquim Domingues Martins — Nossa Sra. do Remédio, Salesópolis — SP",
+    mapa: "R. Joaquim Domingues Martins, Nossa Senhora do Remédio, Salesópolis, SP, Brasil",
     desc: "Atende a comunidade do distrito com turmas juvenis e adultas, no mesmo padrão da matriz.",
   },
   {
     tag: "Filial",
     nome: "Bombeiros 6GB — Bertioga",
     endereco: "",
+    mapa: "Corpo de Bombeiros, Bertioga, SP, Brasil",
     desc: "Parceria com o quartel dos bombeiros. Turmas reservadas a policiais e profissionais de segurança pública.",
   },
 ];
+
 
 function Filiais() {
   return (
