@@ -102,6 +102,8 @@
   --sidebar-accent-foreground: oklch(0.97 0.01 90);
   --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: oklch(0.88 0.19 100);
+  --whatsapp: oklch(0.62 0.17 150);
+  --whatsapp-foreground: oklch(0.98 0.01 90);
 }
 
 .dark {
