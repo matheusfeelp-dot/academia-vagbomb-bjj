@@ -169,8 +169,9 @@ function Horarios() {
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground">
-        Crianças a partir de 6 anos nas turmas juvenis. Para idades inferiores, trabalhamos com
-        aulas particulares — consultar horário diretamente com a equipe.
+        Crianças a partir de 6 anos nas turmas juvenis. Para idades inferiores (desde 3 anos) ou
+        aulas de adulto em horário individual, trabalhamos com personal — consultar horário
+        diretamente com a equipe.
       </p>
 
       <Link
