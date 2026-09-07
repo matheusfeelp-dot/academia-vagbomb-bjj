@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Clock, Instagram, MapPin, MessageCircle } from "lucide-react";
+import { Clock, Instagram, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
@@ -65,6 +65,13 @@ function Contato() {
           >
             <Instagram className="mt-0.5 h-5 w-5 text-primary" />
             @vagbombbjjteam__
+          </a>
+          <a
+            href="mailto:vagbomb193@gmail.com"
+            className="flex items-start gap-3 transition-colors hover:text-primary"
+          >
+            <Mail className="mt-0.5 h-5 w-5 text-primary" />
+            vagbomb193@gmail.com
           </a>
           <p className="flex items-start gap-3">
             <Clock className="mt-0.5 h-5 w-5 text-primary" />

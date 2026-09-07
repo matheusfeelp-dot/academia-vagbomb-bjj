@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, MapPin, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MapPin, MessageCircle } from "lucide-react";
 import logo from "@/assets/vagbomb-logo.jpg.asset.json";
 
 const INSTAGRAM_URL = "https://www.instagram.com/vagbombbjjteam__?igsh=dGNndjVtNDJqdmU2";
@@ -53,6 +53,12 @@ export function SiteFooter() {
             className="flex items-center gap-2 transition-colors hover:text-primary"
           >
             <Instagram className="h-4 w-4 text-primary" /> @vagbombbjjteam__
+          </a>
+          <a
+            href="mailto:vagbomb193@gmail.com"
+            className="flex items-center gap-2 transition-colors hover:text-primary"
+          >
+            <Mail className="h-4 w-4 text-primary" /> vagbomb193@gmail.com
           </a>
         </div>
 
