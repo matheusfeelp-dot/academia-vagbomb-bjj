@@ -5,6 +5,7 @@ import colisao from "@/assets/colaboradores/escola-colisao.jpg.asset.json";
 import marcaB from "@/assets/colaboradores/marca-b.jpg.asset.json";
 import benx from "@/assets/colaboradores/benx-uniformes.jpg.asset.json";
 import prime from "@/assets/colaboradores/prime-esportes.jpg.asset.json";
+import camel from "@/assets/colaboradores/camel-marketing.jpg.asset.json";
 
 export const Route = createFileRoute("/colaboradores")({
   head: () => ({
@@ -51,6 +52,11 @@ const colaboradores = [
     logo: prime.url,
     alt: "Prime Esportes",
     nome: "Prime Esportes",
+  },
+  {
+    logo: camel.url,
+    alt: "Camel Marketing",
+    nome: "Camel Marketing",
   },
 ];
 
