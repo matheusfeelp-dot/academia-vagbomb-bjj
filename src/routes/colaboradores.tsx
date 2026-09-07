@@ -84,14 +84,17 @@ function ColaboradoresPage() {
               key={c.nome}
               className="surface-grit flex flex-col items-center gap-4 border border-border p-6 text-center transition-colors hover:border-primary"
             >
-              <img
-                src={c.logo}
-                alt={c.alt}
-                loading="lazy"
-                width={320}
-                height={320}
-                className="h-32 w-full object-contain md:h-40"
-              />
+              <div className="flex w-full items-center justify-center rounded-lg bg-white/95 p-4">
+                <img
+                  src={c.logo}
+                  alt={c.alt}
+                  loading="lazy"
+                  width={320}
+                  height={320}
+                  className="h-28 w-full object-contain md:h-36"
+                />
+              </div>
+
               <p className="text-stencil text-sm text-muted-foreground">
                 {c.nome}
               </p>
