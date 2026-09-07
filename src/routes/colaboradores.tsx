@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Heart } from "lucide-react";
-import tikinho from "@/assets/colaboradores/pizzaria-tikinho.jpg.asset.json";
-import colisao from "@/assets/colaboradores/escola-colisao.jpg.asset.json";
-import marcaB from "@/assets/colaboradores/marca-b.jpg.asset.json";
-import benx from "@/assets/colaboradores/benx-uniformes.jpg.asset.json";
-import prime from "@/assets/colaboradores/prime-esportes.jpg.asset.json";
-import camel from "@/assets/colaboradores/camel-marketing.jpg.asset.json";
+import tikinho from "@/assets/colaboradores/pizzaria-tikinho.png.asset.json";
+import colisao from "@/assets/colaboradores/escola-colisao.png.asset.json";
+import marcaB from "@/assets/colaboradores/marca-b.png.asset.json";
+import benx from "@/assets/colaboradores/benx-uniformes.png.asset.json";
+import prime from "@/assets/colaboradores/prime-esportes.png.asset.json";
+import camel from "@/assets/colaboradores/camel-marketing.png.asset.json";
 
 export const Route = createFileRoute("/colaboradores")({
   head: () => ({
@@ -78,20 +78,23 @@ function ColaboradoresPage() {
 
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="text-3xl">Nossos parceiros</h2>
-        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-3">
           {colaboradores.map((c) => (
             <div
               key={c.nome}
               className="surface-grit flex flex-col items-center gap-4 border border-border p-6 text-center transition-colors hover:border-primary"
             >
-              <img
-                src={c.logo}
-                alt={c.alt}
-                loading="lazy"
-                width={120}
-                height={120}
-                className="h-24 w-24 rounded-full object-contain"
-              />
+              <div className="flex w-full items-center justify-center rounded-lg bg-white/95 p-4">
+                <img
+                  src={c.logo}
+                  alt={c.alt}
+                  loading="lazy"
+                  width={320}
+                  height={320}
+                  className="h-28 w-full object-contain md:h-36"
+                />
+              </div>
+
               <p className="text-stencil text-sm text-muted-foreground">
                 {c.nome}
               </p>
