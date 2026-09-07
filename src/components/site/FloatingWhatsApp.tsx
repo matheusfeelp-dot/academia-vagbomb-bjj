@@ -23,7 +23,7 @@ export function FloatingWhatsApp() {
           </svg>
         </span>
       </span>
-      <span className="text-stencil max-w-0 whitespace-nowrap text-sm text-foreground opacity-0 transition-all duration-300 group-hover:max-w-[10rem] group-hover:pl-1 group-hover:opacity-100">
+      <span className="text-stencil flex max-w-0 items-center whitespace-nowrap pr-5 text-sm font-semibold text-foreground opacity-0 transition-all duration-300 group-hover:max-w-[12rem] group-hover:opacity-100">
         Fale com a gente
       </span>
     </a>
