@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/vagbomb-logo.jpg.asset.json";
+import logo from "@/assets/vagbomb-logo.jpg";
 
 const links = [
   { to: "/", label: "Início" },
@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
-            src={logo.url}
+            src={logo}
             alt="Vagbomb BJJ"
             width={44}
             height={44}

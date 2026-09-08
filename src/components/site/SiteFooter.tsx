@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, MapPin, MessageCircle } from "lucide-react";
-import logo from "@/assets/vagbomb-logo.jpg.asset.json";
+import logo from "@/assets/vagbomb-logo.jpg";
 
 const INSTAGRAM_URL = "https://www.instagram.com/vagbombbjjteam__?igsh=dGNndjVtNDJqdmU2";
 
@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 md:flex-row md:items-start md:justify-between">
         <div className="flex items-start gap-4">
           <img
-            src={logo.url}
+            src={logo}
             alt="Vagbomb BJJ"
             width={64}
             height={64}

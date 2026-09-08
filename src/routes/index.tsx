@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Baby, Shield, Users, Venus } from "lucide-react";
-import logo from "@/assets/vagbomb-logo.jpg.asset.json";
-import ibjjf from "@/assets/ibjjf-graduacao.png.asset.json";
+import logo from "@/assets/vagbomb-logo.jpg";
+import ibjjf from "@/assets/ibjjf-graduacao.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,7 +52,7 @@ function Home() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-36">
           <img
-            src={logo.url}
+            src={logo}
             alt="Escudo Vagbomb BJJ"
             width={112}
             height={112}
@@ -108,7 +108,7 @@ function Home() {
       <section className="border-y border-border bg-card">
         <div className="mx-auto max-w-3xl px-5 py-20 text-center">
           <img
-            src={logo.url}
+            src={logo}
             alt="Escudo Vagbomb BJJ"
             width={80}
             height={80}
@@ -188,13 +188,13 @@ function Home() {
         </div>
 
         <a
-          href={ibjjf.url}
+          href={ibjjf}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-10 block border border-border bg-white p-2 transition-colors hover:border-primary"
         >
           <img
-            src={ibjjf.url}
+            src={ibjjf}
             alt="Sistema de graduação IBJJF — idades mínimas, hierarquia e graus das faixas"
             className="w-full object-contain"
             loading="lazy"

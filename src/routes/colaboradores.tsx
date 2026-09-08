@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Heart } from "lucide-react";
-import tikinho from "@/assets/colaboradores/pizzaria-tikinho.png.asset.json";
-import colisao from "@/assets/colaboradores/escola-colisao.png.asset.json";
-import marcaB from "@/assets/colaboradores/marca-b.png.asset.json";
-import benx from "@/assets/colaboradores/benx-uniformes.png.asset.json";
-import prime from "@/assets/colaboradores/prime-esportes.png.asset.json";
-import camel from "@/assets/colaboradores/camel-marketing.png.asset.json";
+import tikinho from "@/assets/colaboradores/pizzaria-tikinho.png";
+import colisao from "@/assets/colaboradores/escola-colisao.png";
+import marcaB from "@/assets/colaboradores/marca-b.png";
+import benx from "@/assets/colaboradores/benx-uniformes.png";
+import prime from "@/assets/colaboradores/prime-esportes.png";
+import camel from "@/assets/colaboradores/camel-marketing.png";
 
 export const Route = createFileRoute("/colaboradores")({
   head: () => ({
@@ -29,32 +29,32 @@ export const Route = createFileRoute("/colaboradores")({
 
 const colaboradores = [
   {
-    logo: tikinho.url,
+    logo: tikinho,
     alt: "Pizzaria do Tikinho",
     nome: "Pizzaria do Tikinho",
   },
   {
-    logo: colisao.url,
+    logo: colisao,
     alt: "Escola de Lutas Colisão",
     nome: "Escola de Lutas Colisão",
   },
   {
-    logo: marcaB.url,
+    logo: marcaB,
     alt: "Marca B",
     nome: "Marca B",
   },
   {
-    logo: benx.url,
+    logo: benx,
     alt: "Benx Uniformes",
     nome: "Benx Uniformes",
   },
   {
-    logo: prime.url,
+    logo: prime,
     alt: "Prime Esportes",
     nome: "Prime Esportes",
   },
   {
-    logo: camel.url,
+    logo: camel,
     alt: "Camel Marketing",
     nome: "Camel Marketing",
   },

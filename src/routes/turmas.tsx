@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import logo from "@/assets/vagbomb-logo.jpg.asset.json";
+import logo from "@/assets/vagbomb-logo.jpg";
 
 export const Route = createFileRoute("/turmas")({
   head: () => ({
@@ -70,7 +70,7 @@ function Turmas() {
             <div className="p-6">
               <div className="flex items-center gap-3">
                 <img
-                  src={logo.url}
+                  src={logo}
                   alt="Escudo Vagbomb BJJ"
                   width={40}
                   height={40}
