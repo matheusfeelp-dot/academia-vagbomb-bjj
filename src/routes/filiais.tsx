@@ -26,7 +26,7 @@ const unidades = [
     tag: "Sede",
     nome: "Salesópolis",
     endereco: "Rua Prefeito Antônio de Camargo Primo, 10 — Jd. Nídia, Salesópolis — SP",
-    mapa: "Rua Prefeito Antônio Camargo Primo, Jardim Nídia, Salesópolis, SP, Brasil",
+    mapa: "Rua Prefeito Antonio de Camargo Primo, Salesopolis, SP",
     desc: "Matriz da Vagbomb BJJ. Estrutura completa com tatame, vestiários e sala de musculação.",
   },
   {
