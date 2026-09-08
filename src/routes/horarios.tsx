@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import imgFaixa from "@/assets/ritbox-faixa.jpg.asset.json";
-import imgKids from "@/assets/ritbox-kids.jpg.asset.json";
-import imgAtleta from "@/assets/ritbox-atleta.jpg.asset.json";
+import imgFaixa from "@/assets/ritbox-faixa.jpg";
+import imgKids from "@/assets/ritbox-kids.jpg";
+import imgAtleta from "@/assets/ritbox-atleta.jpg";
 
 export const Route = createFileRoute("/horarios")({
   head: () => ({
@@ -74,19 +74,19 @@ function Horarios() {
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         <img
-          src={imgFaixa.url}
+          src={imgFaixa}
           alt="Graduação de faixa na Vagbomb BJJ"
           className="aspect-[3/4] w-full border border-border object-cover"
           loading="lazy"
         />
         <img
-          src={imgKids.url}
+          src={imgKids}
           alt="Aula de jiu-jitsu infantil na Vagbomb BJJ"
           className="aspect-[3/4] w-full border border-border object-cover"
           loading="lazy"
         />
         <img
-          src={imgAtleta.url}
+          src={imgAtleta}
           alt="Atleta da Vagbomb BJJ durante o treino"
           className="aspect-[3/4] w-full border border-border object-cover"
           loading="lazy"
